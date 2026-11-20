@@ -1,0 +1,251 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barq â€” the fastest download manager for Android</title>
+<meta name="description" content="Barq is an Android download manager: fast multi-connection downloads, video from any site in the quality you pick, a browser that finds files, an ad blocker and floating windows. English and Arabic.">
+<meta name="theme-color" content="#050a18">
+<meta property="og:title" content="Barq â€” Download anything at lightning speed">
+<meta property="og:description" content="A fast, beautiful download manager for Android. English and Arabic.">
+<meta property="og:image" content="assets/img/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-pip" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="12" y="12" width="7" height="5" rx="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9.5 9.5 0 0 1 12 0M9 16a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Barq"><img src="assets/img/logo.png" alt="" width="36" height="36"><span>Barq</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features" data-i="nav.features">Features</a>
+      <a href="#showcase" data-i="nav.showcase">Inside the app</a>
+      <a href="#customize" data-i="nav.custom">Make it yours</a>
+      <a href="#faq" data-i="nav.faq">FAQ</a>
+    </nav>
+    <span class="spacer"></span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ar" aria-pressed="false">Ø¹Ø±Ø¨ÙŠ</button>
+    </div>
+    <a class="btn btn-primary btn-sm" href="#download" data-i="nav.download">Download</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="rv">
+        <span class="pill"><i></i><span data-i="hero.pill">Version 0.9.0 Â· Android 10 and up</span></span>
+        <h1><span data-i="hero.h1a">Download anything.</span><br><span class="grad" data-i="hero.h1b">At lightning speed.</span></h1>
+        <p class="lead" data-i="hero.lead">Barq is a smart download manager for Android. Files and videos in the best quality, a browser that spots links, and a floating window to keep an eye on everything.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#download"><svg><use href="#i-dl"/></svg><span data-i="hero.dl">Download APK</span></a>
+          <a class="btn btn-ghost" href="#features" data-i="hero.more">Explore features</a>
+        </div>
+        <div class="chips">
+          <span><svg><use href="#i-check"/></svg><span data-i="chip.1">Free</span></span>
+          <span><svg><use href="#i-check"/></svg><span data-i="chip.2">English and Arabic</span></span>
+          <span><svg><use href="#i-check"/></svg><span data-i="chip.3">Built-in ad blocker</span></span>
+        </div>
+      </div>
+      <div class="hero-art rv">
+        <div class="float-card fc1"><b dir="ltr">12.4 MB/s</b><span data-i="fc.speed">Download speed</span></div>
+        <div class="phone"><div class="screen" id="heroScreen">
+          <img src="assets/img/downloads.webp" alt="Barq downloads screen" width="720" height="1514">
+          <img src="assets/img/video.webp" alt="Barq video quality window" width="720" height="1514" loading="lazy">
+          <img src="assets/img/smart.webp" alt="Barq download settings" width="720" height="1514" loading="lazy">
+        </div></div>
+        <div class="float-card fc2"><b dir="ltr">4K Â· 60fps</b><span data-i="fc.q">Highest quality</span></div>
+        <div class="float-card fc3"><img src="assets/img/capsule.webp" alt="Barq floating download window" width="900" height="185" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats -->
+  <div class="stats">
+    <div class="wrap rv">
+      <div class="stat"><b>8</b><span data-i="stat.1">connections per file</span></div>
+      <div class="stat"><b>4K</b><span data-i="stat.2">video quality</span></div>
+      <div class="stat"><b>2</b><span data-i="stat.3">languages</span></div>
+      <div class="stat"><b>âœ“</b><span data-i="stat.4">ad and tracker blocker</span></div>
+    </div>
+  </div>
+
+  <!-- showcase -->
+  <section id="showcase">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="sh.eyebrow">Inside the app</span>
+        <h2 data-i="sh.h2">Real screenshots from Barq</h2>
+        <p class="sub" data-i="sh.sub">Every image here was captured from the app itself on a real phone.</p>
+      </div>
+      <div class="show rv">
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true"><h3><em>1</em><span data-i="t1.h">Your downloads at a glance</span></h3><p data-i="t1.p">Active downloads, live speed and blocked ads on top. Below, every file with a coloured state: completed, paused, failed or downloading.</p></button>
+          <button class="tab" role="tab" aria-selected="false"><h3><em>2</em><span data-i="t2.h">Every quality in one window</span></h3><p data-i="t2.p">Share a video link to Barq and a compact window lists every quality with its size, from 144p to 4K. Pick MP4 or MKV, or audio only.</p></button>
+          <button class="tab" role="tab" aria-selected="false"><h3><em>3</em><span data-i="t3.h">Smart downloading</span></h3><p data-i="t3.p">Schedule downloads for set hours, sort files into folders by type, set a speed limit in one tap, and download on Wi-Fi only.</p></button>
+          <button class="tab" role="tab" aria-selected="false"><h3><em>4</em><span data-i="t4.h">Settings that make sense</span></h3><p data-i="t4.p">Each section is one clear row with its current value underneath, so you rarely need to open a page to know where things stand.</p></button>
+          <button class="tab" role="tab" aria-selected="false"><h3><em>5</em><span data-i="t5.h">Ready in seconds</span></h3><p data-i="t5.p">The first launch explains the few permissions Barq needs, then everything works on its own.</p></button>
+        </div>
+        <div class="phone-col"><div class="phone"><div class="screen" id="showScreen">
+          <img src="assets/img/downloads.webp" alt="Barq downloads screen" width="720" height="1514" loading="lazy">
+          <img src="assets/img/video.webp" alt="Barq video quality window" width="720" height="1514" loading="lazy">
+          <img src="assets/img/smart.webp" alt="Barq download settings" width="720" height="1514" loading="lazy">
+          <img src="assets/img/settings.webp" alt="Barq settings" width="720" height="1514" loading="lazy">
+          <img src="assets/img/permissions.webp" alt="Barq permissions dialog" width="720" height="1514" loading="lazy">
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section id="features">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="ft.eyebrow">Features</span>
+        <h2 data-i="ft.h2">Everything you need in one app</h2>
+        <p class="sub" data-i="ft.sub">A strong download engine, a browser and simple controls, without the clutter.</p>
+      </div>
+      <div class="grid">
+        <article class="card rv"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3 data-i="f1.h">Fast downloads</h3><p data-i="f1.p">Each file is split into parts that download at the same time. Downloads pause, resume and retry by themselves.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-video"/></svg></div><h3 data-i="f2.h">Videos from any site</h3><p data-i="f2.p">YouTube, Facebook, Instagram, TikTok and streaming players. Pick the quality or keep only the sound, or grab a whole playlist.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-globe"/></svg></div><h3 data-i="f3.h">A browser that finds files</h3><p data-i="f3.p">Open any site in Barq: the videos and files on the page show up on the download button.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3 data-i="f4.h">Ad and tracker blocking</h3><p data-i="f4.p">EasyList, EasyPrivacy and hosts lists, popup blocking, and a Shield to turn it off for one site.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-link"/></svg></div><h3 data-i="f5.h">Smart links</h3><p data-i="f5.p">Share any link to Barq: files go to the download window, pages open in the browser.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-pip"/></svg></div><h3 data-i="f6.h">Floating window</h3><p data-i="f6.p">Progress, speed and a quick pause over any app, even inside the Barq browser.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-wifi"/></svg></div><h3 data-i="f7.h">Never loses a download</h3><p data-i="f7.p">Lost the internet? Downloads wait and continue by themselves. Wi-Fi only and low battery rules are there too.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="f8.h">Schedule and sort</h3><p data-i="f8.p">Pick the hours downloads may run (say, at night). Files are sorted into Video, Audio, Images, Documents and Apps folders.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-sliders"/></svg></div><h3 data-i="f9.h">Make it yours</h3><p data-i="f9.p">App colour, animations, corners, text size and the bottom bar all have a setting.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- in action -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="center rv"><span class="eyebrow" data-i="band.eyebrow">In action</span></div>
+      <div class="grid" style="grid-template-columns:repeat(2,1fr);margin-top:24px">
+        <article class="card rv"><h3 data-i="b1.h">The floating window</h3><p data-i="b1.p" style="margin-bottom:16px">Follow progress and size, and pause with one tap, above any app.</p><img src="assets/img/capsule.webp" alt="Barq floating download window" width="900" height="185" loading="lazy" style="border-radius:18px;border:1px solid var(--line)"></article>
+        <article class="card rv"><h3 data-i="b2.h">The built-in browser</h3><p data-i="b2.p" style="margin-bottom:16px">A start page with your favourite sites, an ad blocker and a download button that finds files.</p><img src="assets/img/browser.webp" alt="Barq browser start page" width="720" height="734" loading="lazy" style="border-radius:18px;border:1px solid var(--line)"></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- customise -->
+  <section id="customize" class="custom">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" data-i="cu.eyebrow">Make it yours</span>
+        <h2 data-i="cu.h2">Pick the colour of the app</h2>
+        <p class="sub" data-i="cu.sub">Blue is the default, but you can choose another colour, or dial in any colour with the slider, and the whole app follows. Try it here: this page changes colour too.</p>
+        <div class="swatches" role="group" aria-label="Accent colour">
+          <button class="sw" data-c="blue" aria-pressed="true" style="background:#2f7bff" aria-label="Blue"></button>
+          <button class="sw" data-c="violet" aria-pressed="false" style="background:#7c6bff" aria-label="Violet"></button>
+          <button class="sw" data-c="green" aria-pressed="false" style="background:#10b981" aria-label="Green"></button>
+          <button class="sw" data-c="orange" aria-pressed="false" style="background:#f97316" aria-label="Orange"></button>
+          <button class="sw" data-c="pink" aria-pressed="false" style="background:#ec4899" aria-label="Pink"></button>
+          <button class="sw rainbow" data-c="rainbow" aria-pressed="false" aria-label="Custom colour"></button>
+        </div>
+        <p class="note" data-i="cu.note">In the app: blue, violet, green, orange, pink, and a custom colour from a hue slider.</p>
+      </div>
+      <div class="stack rv">
+        <div class="shot"><img src="assets/img/accent-pink.webp" alt="Barq appearance settings with pink accent" width="720" height="704" loading="lazy"></div>
+        <div class="shot"><img src="assets/img/accent-custom.webp" alt="Barq custom colour slider" width="720" height="804" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- steps -->
+  <section>
+    <div class="wrap">
+      <div class="center rv"><span class="eyebrow" data-i="st.eyebrow">How it works</span><h2 data-i="st.h2">Three steps and done</h2></div>
+      <div class="steps">
+        <div class="step rv"><h3 data-i="s1.h">Share the link</h3><p data-i="s1.p">In any app tap Share and choose Barq, or paste the link inside the app.</p></div>
+        <div class="step rv"><h3 data-i="s2.h">Pick the quality</h3><p data-i="s2.p">A small window shows the qualities with their sizes. Choose and start, or save it for later.</p></div>
+        <div class="step rv"><h3 data-i="s3.h">Relax</h3><p data-i="s3.p">Downloading carries on in the background. Your file waits in Download/Barq.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- download -->
+  <section id="download" class="dl">
+    <div class="wrap">
+      <div class="box rv">
+        <img class="logo" src="assets/img/logo.png" alt="Barq icon" width="108" height="108">
+        <div>
+          <span class="eyebrow" data-i="dl.eyebrow">Download</span>
+          <h2 data-i="dl.h2">Get Barq now</h2>
+          <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file. Version 0.9.0 for Android 10 and up.</p>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> 0.9.0</span><span><span data-i="dl.size">Size</span> <span id="apkSize">â€”</span></span><span data-i="dl.req">Android 10+</span></div>
+        </div>
+        <a class="btn btn-primary" id="apkBtn" href="https://github.com/AbdallaXP/barq/releases/latest/download/Barq.apk"><svg><use href="#i-dl"/></svg><span data-i="dl.btn">Download APK</span></a>
+      </div>
+      <div class="install rv">
+        <div><b data-i="i1.h">1. Download the file</b><span data-i="i1.p">Tap the button and save the APK file.</span></div>
+        <div><b data-i="i2.h">2. Allow the install</b><span data-i="i2.p">If Android asks, allow installs from your browser or file manager.</span></div>
+        <div><b data-i="i3.h">3. Open Barq</b><span data-i="i3.p">It asks for its permissions once, then it is ready.</span></div>
+      </div>
+      <p class="note center rv" style="margin-top:18px"><span data-i="dl.sha">SHA-256</span>: <code id="apkSha">â€”</code></p>
+    </div>
+  </section>
+
+  <!-- faq -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="center rv"><span class="eyebrow" data-i="fq.eyebrow">FAQ</span><h2 data-i="fq.h2">Frequently asked questions</h2></div>
+      <div class="faq rv">
+        <details open><summary><span data-i="q1">Is Barq free?</span></summary><p data-i="a1">Yes, the app is free.</p></details>
+        <details><summary><span data-i="q2">Which Android versions does it run on?</span></summary><p data-i="a2">Android 10 and newer.</p></details>
+        <details><summary><span data-i="q3">Why does it ask for permissions?</span></summary><p data-i="a3">Notifications show progress, display over other apps is for the floating window, photos and videos let it show previews, and the battery exemption lets long downloads finish. It asks once at the start, and you can change them in your phone's settings.</p></details>
+        <details><summary><span data-i="q4">Where are my files saved?</span></summary><p data-i="a4">In Download/Barq on your internal storage, sorted into folders by type (video, audio, images and so on). You can turn the sorting off in Settings.</p></details>
+        <details><summary><span data-i="q5">Can it download any video?</span></summary><p data-i="a5">Public videos from popular sites, yes. Content protected by DRM, or videos that need you to sign in, may not download.</p></details>
+        <details><summary><span data-i="q6">Is the app available in Arabic?</span></summary><p data-i="a6">Yes. The app and this site are in English and Arabic, and the layout flips to right-to-left on its own.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="32" height="32"><span>Barq</span></a>
+    <span data-i="ft.dev">Developed by Abdulla Fouad</span>
+    <a href="mailto:abdalla.fouad@outlook.com">abdalla.fouad@outlook.com</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+/* Fills the size and checksum of the APK when a small info file sits next to it (downloads/info.json). */
+fetch("downloads/info.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  if (!j) return;
+  if (j.size) document.getElementById("apkSize").textContent = j.size;
+  if (j.sha256) document.getElementById("apkSha").textContent = j.sha256;
+}).catch(function () {});
+</script>
+</body>
+</html>
+
