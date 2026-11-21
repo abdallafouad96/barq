@@ -139,10 +139,10 @@
   if (!pct && !cnt) return;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduce) { if (pct) pct.textContent = "100%"; if (cnt) cnt.textContent = "217"; return; }
-  function tick(t) {
+  function tick() {
+    var t = Date.now();
     if (pct) { var p = ((t % 6000) / 6000 - 0.28) / 0.54; p = Math.max(0, Math.min(1, p)); pct.textContent = Math.round(p * 100) + "%"; }
     if (cnt) { var q = ((t % 4200) / 4200) / 0.6; cnt.textContent = Math.round(Math.max(0, Math.min(1, q)) * 217); }
-    requestAnimationFrame(tick);
   }
-  requestAnimationFrame(tick);
+  tick(); setInterval(tick, 120);
 })();
