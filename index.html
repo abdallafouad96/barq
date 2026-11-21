@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=094">
+<link rel="stylesheet" href="assets/css/style.css?v=095">
 </head>
 <body>
 <div class="bg-fx" aria-hidden="true"></div>
@@ -291,6 +291,60 @@
         <h2 data-i="w.h2">The same Barq on your PC</h2>
         <p class="sub" data-i="w.sub">Barq DM brings the same look and the same speed to Windows, with a browser extension that takes your downloads.</p>
       </div>
+      <!-- real screenshots of the Windows app -->
+      <div class="wshow rv">
+        <div class="wtabs" role="tablist">
+          <button class="wtab" role="tab" aria-selected="true"><em>1</em><span data-i="wt1.h">Everything at a glance</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>2</em><span data-i="wt2.h">Add a link</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>3</em><span data-i="wt3.h">Live progress</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>4</em><span data-i="wt4.h">Done in one click</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>5</em><span data-i="wt5.h">Light mode</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>6</em><span data-i="wt6.h">In Arabic</span></button>
+        </div>
+        <div class="wstage">
+          <img class="wbg" src="assets/img/win-barq-dark-main.webp" alt="" aria-hidden="true" width="1366" height="793" loading="lazy">
+          <img class="full" src="assets/img/win-barq-dark-main.webp" alt="Barq DM main window: tiles, filters and the download list" width="1366" height="793" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-fileinfo.webp" alt="Barq DM Download File Info window" width="626" height="455" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-progress.webp" alt="Barq DM progress window with connections" width="646" height="590" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-complete.webp" alt="Barq DM download complete window" width="546" height="389" loading="lazy">
+          <img class="full" src="assets/img/win-barq-light-main.webp" alt="Barq DM in light mode" width="1366" height="793" loading="lazy">
+          <img class="full" src="assets/img/win-barq-ar-main.webp" alt="Barq DM in Arabic" width="1366" height="793" loading="lazy">
+        </div>
+        <div class="wcaps">
+          <p data-i="wt1.p">Live speed and active downloads on top, coloured filters with counts, and a search box that also takes a link: paste it and the download starts.</p>
+          <p data-i="wt2.p">Paste a link (or let the browser extension send it): Barq DM shows the name, the size and the category, and puts the file in the right folder.</p>
+          <p data-i="wt3.p">Every file is split into up to 32 parts that download together. You see each connection, the speed and the time left, and you can pause and resume at any time.</p>
+          <p data-i="wt4.p">When a download finishes, a small window lets you open the file or its folder straight away, or copy the link.</p>
+          <p data-i="wt5.p">Light and dark follow Windows by default, and the accent colour can follow Windows too or be your own.</p>
+          <p data-i="wt6.p">The whole program is in English and Arabic, and the layout flips to right-to-left on its own.</p>
+        </div>
+      </div>
+
+      <!-- two looks -->
+      <div class="looks rv">
+        <div class="looks-text">
+          <span class="eyebrow" data-i="lk.eyebrow">Two looks, one program</span>
+          <h3 data-i="lk.h">Barq or Classic: you choose</h3>
+          <p data-i="lk.p">Barq DM has two faces. <b>Barq</b> looks like the Android app: tiles, filters and cards. <b>Classic</b> is the well-known table with menus, a toolbar and a category tree. Downloads, queues and settings are the same in both.</p>
+          <div class="look-sw" role="group" aria-label="Look">
+            <button type="button" class="lookbtn" data-look="win-barq-dark-main" aria-pressed="true" data-i="lk.b1">Barq · dark</button>
+            <button type="button" class="lookbtn" data-look="win-barq-light-main" aria-pressed="false" data-i="lk.b2">Barq · light</button>
+            <button type="button" class="lookbtn" data-look="win-classic-light-main" aria-pressed="false" data-i="lk.b3">Classic · light</button>
+            <button type="button" class="lookbtn" data-look="win-classic-dark-main" aria-pressed="false" data-i="lk.b4">Classic · dark</button>
+          </div>
+          <ol class="look-steps">
+            <li data-i="lk.s1">Open Options (the gear at the top, or Tasks &gt; Options).</li>
+            <li data-i="lk.s2">Go to the Themes tab.</li>
+            <li data-i="lk.s3">Pick Barq or Classic, then light, dark or same as Windows.</li>
+            <li data-i="lk.s4">Press OK: Barq DM restarts in the new look, and running downloads carry on.</li>
+          </ol>
+        </div>
+        <div class="looks-art">
+          <div class="lookstage"><img id="lookImg" src="assets/img/win-barq-dark-main.webp" alt="Barq DM look" width="1366" height="793" loading="lazy"></div>
+          <img class="themes-shot" src="assets/img/win-barq-dark-themes.webp" alt="Barq DM Options, Themes tab: Barq or Classic" width="546" height="713" loading="lazy">
+        </div>
+      </div>
+
       <div class="wfeat rv">
         <article class="card"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3 data-i="w1.h">Many connections</h3><p data-i="w1.p">Files are split into parts that download together and resume after a cut or a restart.</p></article>
         <article class="card"><div class="ic"><svg><use href="#i-globe"/></svg></div><h3 data-i="w2.h">Browser extension</h3><p data-i="w2.p">For Chrome, Edge and Firefox: Barq DM takes the downloads and the videos of the page, with an ad blocker.</p></article>
@@ -342,7 +396,7 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=094"></script>
+<script src="assets/js/main.js?v=095"></script>
 <script>
 /* Fills the size and checksum of the APK when a small info file sits next to it (downloads/info.json). */
 fetch("downloads/info.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {

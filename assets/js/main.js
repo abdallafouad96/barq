@@ -25,6 +25,18 @@
     "w3.h": "فيديو وتورنت", "w3.p": "فيديوهات المواقع المشهورة بالجودة اللي تختارها، وروابط magnet وملفات .torrent.",
     "w4.h": "بيحدّث نفسه", "w4.p": "قوائم انتظار وجدولة وشكلين (برق أو كلاسيك). الإصدارات الجديدة بتتثبت بعد موافقتك.",
     "w.dl.eyebrow": "تحميل لويندوز", "w.dl.h2": "حمّل Barq DM", "w.dl.sub": "ملف تثبيت أو نسخة محمولة. ويندوز 10 و11، 64 بت.",
+    "wt1.h": "كل حاجة قدامك", "wt2.h": "أضف رابط", "wt3.h": "التقدم لحظة بلحظة", "wt4.h": "خلص في ضغطة", "wt5.h": "الوضع الفاتح", "wt6.h": "بالعربي",
+    "wt1.p": "السرعة والتحميلات الشغالة فوق، وفلاتر ملونة بالأعداد، وخانة بحث بتقبل الروابط كمان: الصق الرابط والتحميل يبدأ.",
+    "wt2.p": "الصق الرابط (أو خلّي إضافة المتصفح تبعته): Barq DM بيعرض الاسم والحجم والتصنيف، وبيحط الملف في المجلد الصح.",
+    "wt3.p": "كل ملف بيتقسم لحد 32 جزء بيتحمّلوا مع بعض. هتشوف كل اتصال والسرعة والوقت المتبقي، وتقدر توقف وتكمّل في أي وقت.",
+    "wt4.p": "لما التحميل يخلص، نافذة صغيرة بتخليك تفتح الملف أو مجلده على طول، أو تنسخ الرابط.",
+    "wt5.p": "الفاتح والغامق بيمشوا مع ويندوز تلقائيًا، واللون المميز ممكن يمشي مع ويندوز أو تختاره بنفسك.",
+    "wt6.p": "البرنامج كله بالعربي والإنجليزي، والواجهة بتتقلب من اليمين للشمال لوحدها.",
+    "lk.eyebrow": "شكلين، برنامج واحد", "lk.h": "برق ولا كلاسيك: انت تختار",
+    "lk.p": "Barq DM ليه شكلين. <b>برق</b> زي تطبيق الأندرويد: مربعات وفلاتر وكروت. و<b>كلاسيك</b> الجدول المعروف بالقوائم وشريط الأدوات وشجرة التصنيفات. التحميلات والقوائم والإعدادات واحدة في الاتنين.",
+    "lk.b1": "برق · غامق", "lk.b2": "برق · فاتح", "lk.b3": "كلاسيك · فاتح", "lk.b4": "كلاسيك · غامق",
+    "lk.s1": "افتح الخيارات (الترس اللي فوق، أو المهام ← خيارات).", "lk.s2": "روح لتبويب الثيمات.",
+    "lk.s3": "اختار برق أو كلاسيك، وبعدين فاتح أو غامق أو زي ويندوز.", "lk.s4": "دوس موافق: البرنامج بيعيد تشغيل نفسه بالشكل الجديد، والتحميلات الشغالة بتكمّل.",
     "w.req": "ويندوز 10 / 11", "w.btn": "تحميل لويندوز", "w.zip": "نسخة محمولة (zip)", "w.all": "كل الإصدارات وبصمات SHA-256",
     "hero.h1a": "حمّل أي شيء.", "hero.h1b": "بسرعة البرق.",
     "hero.lead": "برق مدير تحميلات ذكي لأندرويد وويندوز. ملفات وفيديوهات بأعلى جودة، متصفح يلقط الروابط، ونافذة عائمة تتابع منها كل حاجة.",
@@ -99,18 +111,45 @@
   setLang(initial);
   document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
 
-  /* showcase tabs: click, or follow auto-advance */
-  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
-  var shots = Array.prototype.slice.call(document.querySelectorAll("#showScreen img"));
-  var cur = 0, timer = null;
-  function select(i) {
-    cur = i;
-    tabs.forEach(function (t, n) { t.setAttribute("aria-selected", String(n === i)); });
-    shots.forEach(function (s, n) { s.classList.toggle("on", n === i); });
+  /* showcase tabs (Android phone and Windows screenshots): click, or follow auto-advance */
+  function showcase(tabSel, shotSel, capSel, onSelect) {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSel));
+    var shots = Array.prototype.slice.call(document.querySelectorAll(shotSel));
+    var caps = capSel ? Array.prototype.slice.call(document.querySelectorAll(capSel)) : [];
+    var cur = 0, timer = null;
+    function select(i) {
+      cur = i;
+      tabs.forEach(function (t, n) { t.setAttribute("aria-selected", String(n === i)); });
+      shots.forEach(function (s, n) { s.classList.toggle("on", n === i); });
+      caps.forEach(function (c, n) { c.classList.toggle("on", n === i); });
+      if (onSelect) onSelect(shots[i]);
+    }
+    function auto() { clearInterval(timer); timer = setInterval(function () { select((cur + 1) % tabs.length); }, 7000); }
+    tabs.forEach(function (t, i) { t.addEventListener("click", function () { select(i); auto(); }); });
+    if (tabs.length) { select(0); auto(); }
   }
-  function auto() { clearInterval(timer); timer = setInterval(function () { select((cur + 1) % tabs.length); }, 6000); }
-  tabs.forEach(function (t, i) { t.addEventListener("click", function () { select(i); auto(); }); });
-  if (tabs.length) { select(0); auto(); }
+  showcase(".tab", "#showScreen img", null, null);
+  var wstage = document.querySelector(".wstage");
+  showcase(".wtab", ".wstage img:not(.wbg)", ".wcaps p", function (img) {
+    if (wstage && img) wstage.classList.toggle("dlg-on", img.classList.contains("dlg"));
+  });
+
+  /* Windows: Barq / Classic look switch */
+  var lookImg = document.getElementById("lookImg");
+  document.querySelectorAll(".lookbtn").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll(".lookbtn").forEach(function (o) { o.setAttribute("aria-pressed", String(o === b)); });
+      if (!lookImg) return;
+      var n = b.getAttribute("data-look");
+      var cls = n.indexOf("classic") >= 0;
+      lookImg.style.opacity = "0";
+      setTimeout(function () {
+        lookImg.src = "assets/img/" + n + ".webp";
+        lookImg.width = cls ? 1166 : 1366; lookImg.height = cls ? 593 : 793;
+        lookImg.style.opacity = "1";
+      }, 180);
+    });
+  });
   var heroShots = Array.prototype.slice.call(document.querySelectorAll("#heroScreen img"));
   if (heroShots.length > 1) {
     var h = 0; heroShots[0].classList.add("on");
