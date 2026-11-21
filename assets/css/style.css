@@ -438,3 +438,22 @@ html[dir="rtl"] .duo .phone { transform: rotate(4deg); }
 html[dir="rtl"] .shx-pop { right: auto; left: -18px; }
 html[lang="ar"] .only-en, html:not([lang="ar"]) .only-ar { display: none; }
 @media (max-width: 960px) { .shieldx { grid-template-columns: 1fr; } .shx-pop { position: static; width: 56%; display: block; margin: 16px auto 0; } .shx-art { padding-bottom: 0; } }
+
+/* phone + PC */
+.link-art { display: grid; grid-template-columns: minmax(0, 1fr) 140px auto; gap: 18px; align-items: center; margin-top: 44px; }
+.link-art figure { margin: 0; text-align: center; }
+.link-art figcaption { color: var(--mute); font-size: 14px; margin-top: 12px; }
+.link-pc img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 30px 70px rgba(0,0,0,.45), 0 0 50px var(--glow); }
+.link-phone .phone { width: 250px; margin: 0 auto; }
+.link-phone .screen img { opacity: 1; position: static; height: 100%; }
+.link-wire { position: relative; height: 4px; border-radius: 4px; background: rgba(255,255,255,.08); }
+.link-wire i { position: absolute; top: -3px; width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow: 0 0 12px var(--accent2); animation: wire 2.4s linear infinite; }
+.link-wire i:nth-child(2) { animation-delay: .8s; } .link-wire i:nth-child(3) { animation-delay: 1.6s; background: #4cc38a; animation-direction: reverse; }
+.link-wire span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--panel); border: 1px solid var(--line); color: var(--accent2); }
+.link-wire span svg { width: 20px; height: 20px; }
+@keyframes wire { from { left: 0; opacity: 0 } 10% { opacity: 1 } 90% { opacity: 1 } to { left: calc(100% - 10px); opacity: 0 } }
+html[dir="rtl"] .link-wire { transform: scaleX(-1); } html[dir="rtl"] .link-wire span { transform: translate(-50%, -50%) scaleX(-1); }
+.link-steps { margin-top: 40px; }
+@media (max-width: 860px) { .link-art { grid-template-columns: 1fr; } .link-wire { width: 4px; height: 80px; margin: 0 auto; } .link-wire i { left: -3px !important; animation-name: wirev; } .link-wire span { transform: translate(-50%, -50%) !important; } }
+@keyframes wirev { from { top: 0; opacity: 0 } 10% { opacity: 1 } 90% { opacity: 1 } to { top: calc(100% - 10px); opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { .link-wire i { animation: none; display: none; } }

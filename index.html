@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=096">
+<link rel="stylesheet" href="assets/css/style.css?v=097">
 </head>
 <body>
 <div class="bg-fx" aria-hidden="true"></div>
@@ -46,10 +46,9 @@
     <nav class="nav-links" aria-label="Main">
       <a href="#features" data-i="nav.features">Features</a>
       <a href="#showcase" data-i="nav.showcase">Android</a>
-      <a href="#demos" data-i="nav.demos">How it works</a>
-      <a href="#customize" data-i="nav.custom">Make it yours</a>
       <a href="#windows" data-i="nav.windows">Windows</a>
       <a href="#shield" data-i="nav.shield">Shield</a>
+      <a href="#link" data-i="nav.link">Phone + PC</a>
       <a href="#faq" data-i="nav.faq">FAQ</a>
     </nav>
     <span class="spacer"></span>
@@ -322,8 +321,8 @@
         <div>
           <span class="eyebrow" data-i="dl.eyebrow">Download</span>
           <h2 data-i="dl.h2">Get Barq now</h2>
-          <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file. Version 0.9.3 for Android 10 and up.</p>
-          <div class="meta"><span><span data-i="dl.ver">Version</span> 0.9.3</span><span><span data-i="dl.size">Size</span> <span id="apkSize">—</span></span><span data-i="dl.req">Android 10+</span></div>
+          <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file. Version 0.10.0 for Android 10 and up.</p>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> 0.10.0</span><span><span data-i="dl.size">Size</span> <span id="apkSize">—</span></span><span data-i="dl.req">Android 10+</span></div>
         </div>
         <a class="btn btn-primary" id="apkBtn" href="https://github.com/abdallafouad96/barq/releases/latest/download/Barq.apk"><svg><use href="#i-dl"/></svg><span data-i="dl.btn">Download APK</span></a>
       </div>
@@ -333,6 +332,34 @@
         <div><b data-i="i3.h">3. Open Barq</b><span data-i="i3.p">It asks for its permissions once, then it is ready.</span></div>
       </div>
       <p class="note center rv" style="margin-top:18px"><span data-i="dl.sha">SHA-256</span>: <code id="apkSha">—</code></p>
+    </div>
+  </section>
+
+  <!-- phone + PC -->
+  <section id="link" class="linksec">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="lnk.eyebrow">Phone + PC</span>
+        <h2 data-i="lnk.h2">Your phone and your PC, working together</h2>
+        <p class="sub" data-i="lnk.sub">Pair Barq on Android with Barq DM on Windows once. On the same Wi-Fi, send links to the PC and bring finished files back to the phone.</p>
+      </div>
+      <div class="link-art rv">
+        <figure class="link-pc">
+          <img src="assets/img/win-phonelink.webp" alt="Barq DM, Tasks &gt; Connect a phone: the pairing QR code" width="586" height="491" loading="lazy">
+          <figcaption data-i="lnk.cap1">Barq DM: Tasks &gt; Connect a phone</figcaption>
+        </figure>
+        <div class="link-wire" aria-hidden="true"><i></i><i></i><i></i><span><svg><use href="#i-wifi"/></svg></span></div>
+        <figure class="link-phone">
+          <div class="phone"><div class="screen"><img class="only-en" src="assets/img/pclink-en.webp" alt="Barq, Settings &gt; PC link: the PC's downloads" width="540" height="1200" loading="lazy"><img class="only-ar" src="assets/img/pclink-ar.webp" alt="برق، الإعدادات ← ربط الكمبيوتر" width="540" height="1200" loading="lazy"></div></div>
+          <figcaption data-i="lnk.cap2">Barq: Settings &gt; PC link</figcaption>
+        </figure>
+      </div>
+      <div class="steps link-steps">
+        <div class="step rv"><h3 data-i="lnk.s1h">Pair with a QR code</h3><p data-i="lnk.s1p">On the PC open Tasks &gt; Connect a phone. On the phone open Settings &gt; PC link and scan the code. That is all, once.</p></div>
+        <div class="step rv"><h3 data-i="lnk.s2h">Send links to the PC</h3><p data-i="lnk.s2p">Found a big file on the phone? Tap "PC" in the share window or "Send to" in the + sheet, and Barq DM downloads it on the PC.</p></div>
+        <div class="step rv"><h3 data-i="lnk.s3h">Bring files to the phone</h3><p data-i="lnk.s3p">See the PC's downloads live, and tap "Get" on a finished file to copy it to the phone over Wi-Fi, with resume.</p></div>
+      </div>
+      <p class="note center rv" data-i="lnk.safe">Safe by design: only the phone that scanned the code can talk to Barq DM, every request is signed with its key, and nothing leaves your Wi-Fi.</p>
     </div>
   </section>
 
@@ -440,7 +467,7 @@
           <span class="eyebrow" data-i="w.dl.eyebrow">Download for Windows</span>
           <h2 data-i="w.dl.h2">Get Barq DM</h2>
           <p class="sub" style="margin:0" data-i="w.dl.sub">Installer or portable copy. Windows 10 and 11, 64-bit.</p>
-          <div class="meta"><span><span data-i="dl.ver">Version</span> <span id="winVer">1.9.1</span></span><span><span data-i="dl.size">Size</span> <span id="winSize" dir="ltr">101 MB</span></span><span data-i="w.req">Windows 10 / 11</span></div>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> <span id="winVer">1.10.0</span></span><span><span data-i="dl.size">Size</span> <span id="winSize" dir="ltr">101 MB</span></span><span data-i="w.req">Windows 10 / 11</span></div>
         </div>
         <div class="wbtns">
           <a class="btn btn-primary" id="winBtn" href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases/latest"><svg><use href="#i-win"/></svg><span data-i="w.btn">Download for Windows</span></a>
@@ -479,7 +506,7 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=096"></script>
+<script src="assets/js/main.js?v=097"></script>
 <script>
 /* Fills the size and checksum of the APK when a small info file sits next to it (downloads/info.json). */
 fetch("downloads/info.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
