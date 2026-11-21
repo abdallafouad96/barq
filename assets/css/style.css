@@ -226,7 +226,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 30px; align-items: cent
 .pbar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent2)); animation: fill 6s linear infinite; }
 @keyframes fill { 0%, 28% { width: 0; background: var(--accent) } 80% { width: 100%; } 90%, 100% { width: 100%; background: #4cc38a } }
 .pct { direction: ltr; font-size: 14px; color: var(--accent2); height: 18px; }
-.pct .n::before { content: "0%"; animation: pct 6s linear infinite; }
 @keyframes pct { 0%, 28% { content: "0%" } 40% { content: "20%" } 52% { content: "45%" } 64% { content: "70%" } 76% { content: "90%" } 82%, 100% { content: "100%" } }
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
 .chips b { font-weight: 600; font-size: 12px; padding: 5px 10px; border-radius: 99px; background: rgba(47,123,255,.18); color: var(--accent2); opacity: 0; animation: pop 6s infinite; }
@@ -269,7 +268,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 30px; align-items: cent
 .shield { text-align: center; color: var(--accent2); z-index: 2; }
 .shield svg { width: 64px; height: 64px; padding: 14px; border-radius: 50%; background: rgba(47,123,255,.18); box-sizing: content-box; }
 .shield b { display: block; margin-top: 6px; font-size: 22px; color: #fff; }
-.count::before { content: "0"; animation: count 4.2s steps(1) infinite; }
 @keyframes count { 0% { content: "0" } 10% { content: "36" } 20% { content: "72" } 30% { content: "108" } 40% { content: "144" } 50% { content: "181" } 60% { content: "217" } 80%, 100% { content: "217" } }
 .ad { position: absolute; padding: 6px 12px; border-radius: 8px; background: rgba(245,112,122,.22); color: #f5707a; font-weight: 700; font-size: 13px; animation: fly 4.2s ease-in infinite; }
 .a1 { left: 10%; top: 24%; --dx: 90px } .a2 { right: 10%; top: 58%; --dx: -90px; animation-delay: 1.2s } .a3 { left: 12%; top: 66%; --dx: 90px; animation-delay: 2.4s }
