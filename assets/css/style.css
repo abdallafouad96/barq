@@ -275,3 +275,10 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 30px; align-items: cent
 
 @media (max-width: 860px) { .demos { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .stage * { animation: none !important; } .urlbar .typed { width: 25ch; } .pbar i { width: 100%; } .dlbtn { transform: scale(1); } .files .bar i { width: var(--w); } }
+
+/* Windows section */
+.wfeat { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 30px; }
+.wbtns { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+footer .contacts { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+@media (max-width: 960px) { .wfeat { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .wfeat { grid-template-columns: 1fr; } .wbtns { width: 100%; } }

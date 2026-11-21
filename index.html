@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Barq — the fastest download manager for Android</title>
-<meta name="description" content="Barq is an Android download manager: fast multi-connection downloads, video from any site in the quality you pick, a browser that finds files, an ad blocker and floating windows. English and Arabic.">
+<title>Barq — the fast download manager for Android and Windows</title>
+<meta name="description" content="Barq is a download manager for Android and Windows: fast multi-connection downloads, video from any site in the quality you pick, a browser that finds files, an ad blocker and floating windows. English and Arabic.">
 <meta name="theme-color" content="#050a18">
 <meta property="og:title" content="Barq — Download anything at lightning speed">
-<meta property="og:description" content="A fast, beautiful download manager for Android. English and Arabic.">
+<meta property="og:description" content="A fast, beautiful download manager for Android and Windows. English and Arabic.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=093">
+<link rel="stylesheet" href="assets/css/style.css?v=094">
 </head>
 <body>
 <div class="bg-fx" aria-hidden="true"></div>
@@ -35,6 +35,7 @@
     <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
     <symbol id="i-torrent" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="5" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="19" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 7.5 10 10.5M17.5 7.5 14 10.5M12 15v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10.5 4.5v7H3zM12 4.3 21 3v8.5h-9zM3 12.5h7.5v7L3 18.5zM12 12.5h9V21l-9-1.3z" fill="currentColor"/></symbol>
     <symbol id="i-update" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7M20 4v4.5h-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
@@ -47,6 +48,7 @@
       <a href="#showcase" data-i="nav.showcase">Inside the app</a>
       <a href="#demos" data-i="nav.demos">How it works</a>
       <a href="#customize" data-i="nav.custom">Make it yours</a>
+      <a href="#windows" data-i="nav.windows">Windows</a>
       <a href="#faq" data-i="nav.faq">FAQ</a>
     </nav>
     <span class="spacer"></span>
@@ -63,11 +65,12 @@
   <section class="hero">
     <div class="wrap">
       <div class="rv">
-        <span class="pill"><i></i><span data-i="hero.pill">Version 0.9.2 · Android 10 and up</span></span>
+        <span class="pill"><i></i><span data-i="hero.pill">Android 10+ · Windows 10 and 11</span></span>
         <h1><span data-i="hero.h1a">Download anything.</span><br><span class="grad" data-i="hero.h1b">At lightning speed.</span></h1>
-        <p class="lead" data-i="hero.lead">Barq is a smart download manager for Android. Files and videos in the best quality, a browser that spots links, and a floating window to keep an eye on everything.</p>
+        <p class="lead" data-i="hero.lead">Barq is a smart download manager for Android and Windows. Files and videos in the best quality, a browser that spots links, and a floating window to keep an eye on everything.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#download"><svg><use href="#i-dl"/></svg><span data-i="hero.dl">Download APK</span></a>
+          <a class="btn btn-primary" href="#download"><svg><use href="#i-dl"/></svg><span data-i="hero.dl">Android (APK)</span></a>
+          <a class="btn btn-primary" href="#windows"><svg><use href="#i-win"/></svg><span data-i="hero.win">Windows</span></a>
           <a class="btn btn-ghost" href="#features" data-i="hero.more">Explore features</a>
         </div>
         <div class="chips">
@@ -269,7 +272,7 @@
           <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file. Version 0.9.2 for Android 10 and up.</p>
           <div class="meta"><span><span data-i="dl.ver">Version</span> 0.9.2</span><span><span data-i="dl.size">Size</span> <span id="apkSize">—</span></span><span data-i="dl.req">Android 10+</span></div>
         </div>
-        <a class="btn btn-primary" id="apkBtn" href="https://github.com/AbdallaXP/barq/releases/latest/download/Barq.apk"><svg><use href="#i-dl"/></svg><span data-i="dl.btn">Download APK</span></a>
+        <a class="btn btn-primary" id="apkBtn" href="https://github.com/abdallafouad96/barq/releases/latest/download/Barq.apk"><svg><use href="#i-dl"/></svg><span data-i="dl.btn">Download APK</span></a>
       </div>
       <div class="install rv">
         <div><b data-i="i1.h">1. Download the file</b><span data-i="i1.p">Tap the button and save the APK file.</span></div>
@@ -277,6 +280,37 @@
         <div><b data-i="i3.h">3. Open Barq</b><span data-i="i3.p">It asks for its permissions once, then it is ready.</span></div>
       </div>
       <p class="note center rv" style="margin-top:18px"><span data-i="dl.sha">SHA-256</span>: <code id="apkSha">—</code></p>
+    </div>
+  </section>
+
+  <!-- windows -->
+  <section id="windows" class="dl">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="w.eyebrow">Barq for Windows</span>
+        <h2 data-i="w.h2">The same Barq on your PC</h2>
+        <p class="sub" data-i="w.sub">Barq DM brings the same look and the same speed to Windows, with a browser extension that takes your downloads.</p>
+      </div>
+      <div class="wfeat rv">
+        <article class="card"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3 data-i="w1.h">Many connections</h3><p data-i="w1.p">Files are split into parts that download together and resume after a cut or a restart.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-globe"/></svg></div><h3 data-i="w2.h">Browser extension</h3><p data-i="w2.p">For Chrome, Edge and Firefox: Barq DM takes the downloads and the videos of the page, with an ad blocker.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-video"/></svg></div><h3 data-i="w3.h">Video and torrents</h3><p data-i="w3.p">Videos from popular sites in the quality you pick, magnet links and .torrent files.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-update"/></svg></div><h3 data-i="w4.h">Updates itself</h3><p data-i="w4.p">Queues, a scheduler and two looks (Barq or Classic). New versions install after you agree.</p></article>
+      </div>
+      <div class="box rv" style="margin-top:26px">
+        <img class="logo" src="assets/img/logo.png" alt="Barq DM icon" width="108" height="108">
+        <div>
+          <span class="eyebrow" data-i="w.dl.eyebrow">Download for Windows</span>
+          <h2 data-i="w.dl.h2">Get Barq DM</h2>
+          <p class="sub" style="margin:0" data-i="w.dl.sub">Installer or portable copy. Windows 10 and 11, 64-bit.</p>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> <span id="winVer">1.9.0</span></span><span><span data-i="dl.size">Size</span> <span id="winSize" dir="ltr">101 MB</span></span><span data-i="w.req">Windows 10 / 11</span></div>
+        </div>
+        <div class="wbtns">
+          <a class="btn btn-primary" id="winBtn" href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases/latest"><svg><use href="#i-win"/></svg><span data-i="w.btn">Download for Windows</span></a>
+          <a class="btn btn-ghost" id="winZip" href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases/latest" data-i="w.zip">Portable (zip)</a>
+        </div>
+      </div>
+      <p class="note center rv" style="margin-top:18px"><a href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases" data-i="w.all">All versions and SHA-256 checksums</a></p>
     </div>
   </section>
 
@@ -299,18 +333,34 @@
 <footer>
   <div class="wrap">
     <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="32" height="32"><span>Barq</span></a>
-    <span data-i="ft.dev">Developed by Abdulla Fouad</span>
-    <a href="mailto:abdalla.fouad@outlook.com">abdalla.fouad@outlook.com</a>
+    <span data-i="ft.dev">Developed by Abdullah Fouad</span>
+    <span class="contacts">
+      <a href="https://www.facebook.com/Abdalla.MF2" rel="noopener">Facebook</a>
+      <a href="https://t.me/abdallafouad96" rel="noopener">Telegram</a>
+      <a href="mailto:abdalla.fouad@outlook.com">abdalla.fouad@outlook.com</a>
+    </span>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=093"></script>
+<script src="assets/js/main.js?v=094"></script>
 <script>
 /* Fills the size and checksum of the APK when a small info file sits next to it (downloads/info.json). */
 fetch("downloads/info.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
   if (!j) return;
   if (j.size) document.getElementById("apkSize").textContent = j.size;
   if (j.sha256) document.getElementById("apkSha").textContent = j.sha256;
+}).catch(function () {});
+/* Windows: the newest release on GitHub gives the direct links, the version and the size. */
+fetch("https://api.github.com/repos/abdallafouad96/barq-dm-windows-releases/releases/latest").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  if (!j || !j.assets) return;
+  var v = String(j.tag_name || "").replace(/^v/i, "");
+  if (v) document.getElementById("winVer").textContent = v;
+  j.assets.forEach(function (a) {
+    if (/^BarqDM-Setup-.*\.exe$/i.test(a.name)) {
+      document.getElementById("winBtn").href = a.browser_download_url;
+      document.getElementById("winSize").textContent = Math.round(a.size / 1048576) + " MB";
+    } else if (/^BarqDM-Portable-.*\.zip$/i.test(a.name)) document.getElementById("winZip").href = a.browser_download_url;
+  });
 }).catch(function () {});
 </script>
 </body>
