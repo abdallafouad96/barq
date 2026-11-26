@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=097">
+<link rel="stylesheet" href="assets/css/style.css?v=0911">
 </head>
 <body>
 <div class="bg-fx" aria-hidden="true"></div>
@@ -44,6 +44,7 @@
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Barq"><img src="assets/img/logo.png" alt="" width="36" height="36"><span>Barq</span></a>
     <nav class="nav-links" aria-label="Main">
+      <a href="#why" data-i="nav.why">Why Barq</a>
       <a href="#features" data-i="nav.features">Features</a>
       <a href="#showcase" data-i="nav.showcase">Android</a>
       <a href="#windows" data-i="nav.windows">Windows</a>
@@ -67,16 +68,17 @@
       <div class="rv">
         <span class="pill"><i></i><span data-i="hero.pill">One Barq · Android 10+ and Windows 10/11</span></span>
         <h1><span data-i="hero.h1a">Download anything.</span><br><span class="grad" data-i="hero.h1b">At lightning speed.</span></h1>
-        <p class="lead" data-i="hero.lead">One download manager for your phone and your PC, with the same look and the same speed. On Android: a browser that spots videos and a floating window. On Windows: Barq DM with a browser extension and the Barq Shield ad blocker.</p>
+        <p class="lead" data-i="hero.lead">Paste a link from YouTube, Facebook, TikTok, Instagram or X and pick the quality in a second. Files download over many connections at once, ads on film sites are blocked, and torrents, a browser and a floating window are all inside. Free, no ads, no account.</p>
         <div class="cta">
           <a class="btn btn-primary" href="#download"><svg><use href="#i-dl"/></svg><span data-i="hero.dl">Android (APK)</span></a>
           <a class="btn btn-primary" href="#windows"><svg><use href="#i-win"/></svg><span data-i="hero.win">Windows</span></a>
           <a class="btn btn-ghost" href="#features" data-i="hero.more">Explore features</a>
         </div>
         <div class="chips">
-          <span><svg><use href="#i-check"/></svg><span data-i="chip.1">Free</span></span>
+          <span><svg><use href="#i-check"/></svg><span data-i="chip.1">Free, no ads, no account</span></span>
           <span><svg><use href="#i-check"/></svg><span data-i="chip.2">English and Arabic</span></span>
           <span><svg><use href="#i-check"/></svg><span data-i="chip.3">Ad blocker on phone and PC</span></span>
+          <span><svg><use href="#i-check"/></svg><span data-i="chip.4">Updates itself</span></span>
         </div>
       </div>
       <div class="hero-art rv">
@@ -109,10 +111,44 @@
     <div class="wrap rv">
       <div class="stat"><b>2</b><span data-i="stat.1">platforms: Android and Windows</span></div>
       <div class="stat"><b>32</b><span data-i="stat.2">connections per file on the PC</span></div>
-      <div class="stat"><b>4K</b><span data-i="stat.3">video in English and Arabic</span></div>
-      <div class="stat"><b>9</b><span data-i="stat.4">filter lists in Barq Shield</span></div>
+      <div class="stat"><b>&lt;1s</b><span data-i="stat.3">to read a video's qualities</span></div>
+      <div class="stat"><b>10</b><span data-i="stat.4">filter lists in Barq Shield</span></div>
     </div>
   </div>
+
+  <!-- why Barq -->
+  <section id="why">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="why.eyebrow">Why Barq</span>
+        <h2 data-i="why.h2">One app instead of five</h2>
+        <p class="sub" data-i="why.sub">Most people keep a video downloader, a download manager, a torrent app, an ad blocker and a browser. Barq is all of them, and each part is built to be the fastest of its kind.</p>
+      </div>
+      <div class="why">
+        <article class="why-card rv"><div class="why-n" dir="ltr">&lt;1s</div><h3 data-i="wy1.h">Videos without the wait</h3><p data-i="wy1.p">Share a link from YouTube, Facebook, TikTok, Instagram or X: the qualities and sizes show up in about a second, and the download starts at once. Open a video page in the Barq browser and it is ready before you tap.</p></article>
+        <article class="why-card rv"><div class="why-n" dir="ltr">32×</div><h3 data-i="wy2.h">Download-manager speed</h3><p data-i="wy2.p">Every file is split into parts that download together. When a part finishes early, its connection takes half of the slowest one, so the last seconds are as fast as the first. Lost the internet? It continues by itself.</p></article>
+        <article class="why-card rv"><div class="why-n" dir="ltr">10</div><h3 data-i="wy3.h">Ads that stay away</h3><p data-i="wy3.p">Ten filter lists, made for Arabic sites too. Pop-ups, fake "play" buttons and redirects on film and series sites are stopped, even ad networks that change their name every few days, while the video player keeps working.</p></article>
+        <article class="why-card rv"><div class="why-n">✓</div><h3 data-i="wy4.h">Free, and it stays free</h3><p data-i="wy4.p">No ads inside the app, no account, no paid version that hides features. Barq checks for new versions and installs them by itself.</p></article>
+      </div>
+
+      <div class="cmp rv">
+        <table>
+          <thead><tr><th></th><th class="me">Barq</th><th data-i="cmp.other">A usual download app</th></tr></thead>
+          <tbody>
+            <tr><td data-i="cmp.r1">Video from YouTube, Facebook, TikTok, Instagram, X</td><td class="me">✓</td><td>½</td></tr>
+            <tr><td data-i="cmp.r2">Qualities ready in about a second</td><td class="me">✓</td><td>✗</td></tr>
+            <tr><td data-i="cmp.r3">Many connections per file, parts rebalanced live</td><td class="me">✓</td><td>½</td></tr>
+            <tr><td data-i="cmp.r4">Torrents and magnet links</td><td class="me">✓</td><td>✗</td></tr>
+            <tr><td data-i="cmp.r5">Browser with an ad blocker for Arabic sites</td><td class="me">✓</td><td>✗</td></tr>
+            <tr><td data-i="cmp.r6">Floating window over any app</td><td class="me">✓</td><td>✗</td></tr>
+            <tr><td data-i="cmp.r7">Send links to your PC and back</td><td class="me">✓</td><td>✗</td></tr>
+            <tr><td data-i="cmp.r8">No ads, no account</td><td class="me">✓</td><td>✗</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="center rv" style="margin-top:28px"><a class="btn btn-primary" href="#download"><svg><use href="#i-dl"/></svg><span data-i="why.cta">Get Barq free</span></a></div>
+    </div>
+  </section>
 
   <!-- showcase -->
   <section id="showcase">
@@ -155,16 +191,16 @@
       </div>
       <div class="grid">
         <article class="card rv"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3 data-i="f1.h">Fast downloads</h3><p data-i="f1.p">Each file is split into parts that download at the same time. Downloads pause, resume and retry by themselves.</p></article>
-        <article class="card rv"><div class="ic"><svg><use href="#i-video"/></svg></div><h3 data-i="f2.h">Videos from any site</h3><p data-i="f2.p">YouTube, Facebook, Instagram, TikTok and streaming players. Pick the quality or keep only the sound, or grab a whole playlist.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-video"/></svg></div><h3 data-i="f2.h">Videos from any site</h3><p data-i="f2.p">YouTube, Facebook, Instagram, TikTok, X and the players of film sites. Qualities in about a second; pick one, keep only the sound, or grab a whole playlist.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-globe"/></svg></div><h3 data-i="f3.h">A browser that finds files</h3><p data-i="f3.p">Open any site in Barq: the videos and files on the page show up on the download button.</p></article>
-        <article class="card rv"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3 data-i="f4.h">Ad and tracker blocking</h3><p data-i="f4.p">EasyList, EasyPrivacy and hosts lists, popup blocking, and a Shield to turn it off for one site.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3 data-i="f4.h">Ad and tracker blocking</h3><p data-i="f4.p">Ten filter lists including Arabic ones, pop-up and redirect blocking on film sites, and a Shield to turn it off for one site.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-link"/></svg></div><h3 data-i="f5.h">Smart links</h3><p data-i="f5.p">Share any link to Barq: files go to the download window, pages open in the browser.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-pip"/></svg></div><h3 data-i="f6.h">Floating window</h3><p data-i="f6.p">Progress, speed and a quick pause over any app, even inside the Barq browser.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-wifi"/></svg></div><h3 data-i="f7.h">Never loses a download</h3><p data-i="f7.p">Lost the internet? Downloads wait and continue by themselves. Wi-Fi only and low battery rules are there too.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="f8.h">Schedule and sort</h3><p data-i="f8.p">Pick the hours downloads may run (say, at night). Files are sorted into Video, Audio, Images, Documents and Apps folders.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-torrent"/></svg></div><h3 data-i="f10.h">Torrents</h3><p data-i="f10.p">Magnet links and .torrent files with a file picker, peers, trackers, speed limits and sharing, like uTorrent.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-search"/></svg></div><h3 data-i="f11.h">Search or paste a link</h3><p data-i="f11.p">The Downloads search box also takes a link: a file downloads, a page opens in the browser. Nothing found? Search Google in one tap.</p></article>
-        <article class="card rv"><div class="ic"><svg><use href="#i-update"/></svg></div><h3 data-i="f12.h">Light and always up to date</h3><p data-i="f12.p">A Light mode for weak phones and a built-in check for new versions.</p></article>
+        <article class="card rv"><div class="ic"><svg><use href="#i-update"/></svg></div><h3 data-i="f12.h">Light and always up to date</h3><p data-i="f12.p">A Light mode for weak phones, and new versions that download and install by themselves.</p></article>
         <article class="card rv"><div class="ic"><svg><use href="#i-sliders"/></svg></div><h3 data-i="f9.h">Make it yours</h3><p data-i="f9.p">App colour, animations, corners, text size and the bottom bar all have a setting.</p></article>
       </div>
     </div>
@@ -321,8 +357,8 @@
         <div>
           <span class="eyebrow" data-i="dl.eyebrow">Download</span>
           <h2 data-i="dl.h2">Get Barq now</h2>
-          <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file. Version 0.10.0 for Android 10 and up.</p>
-          <div class="meta"><span><span data-i="dl.ver">Version</span> 0.10.0</span><span><span data-i="dl.size">Size</span> <span id="apkSize">—</span></span><span data-i="dl.req">Android 10+</span></div>
+          <p class="sub" style="margin:0" data-i="dl.sub">A direct APK file for Android 10 and up. Once installed, Barq keeps itself up to date.</p>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> <span id="apkVer">—</span></span><span><span data-i="dl.size">Size</span> <span id="apkSize">—</span></span><span data-i="dl.req">Android 10+</span></div>
         </div>
         <a class="btn btn-primary" id="apkBtn" href="https://github.com/abdallafouad96/barq/releases/latest/download/Barq.apk"><svg><use href="#i-dl"/></svg><span data-i="dl.btn">Download APK</span></a>
       </div>
@@ -331,7 +367,8 @@
         <div><b data-i="i2.h">2. Allow the install</b><span data-i="i2.p">If Android asks, allow installs from your browser or file manager.</span></div>
         <div><b data-i="i3.h">3. Open Barq</b><span data-i="i3.p">It asks for its permissions once, then it is ready.</span></div>
       </div>
-      <p class="note center rv" style="margin-top:18px"><span data-i="dl.sha">SHA-256</span>: <code id="apkSha">—</code></p>
+      <p class="note center rv" style="margin-top:18px"><span data-i="dl.old">Older phone (32-bit)?</span> <a id="apk32" href="https://github.com/abdallafouad96/barq/releases/latest/download/Barq_armeabi-v7a.apk" data-i="dl.old.a">Download this version instead</a></p>
+      <p class="note center rv" style="margin-top:8px"><span data-i="dl.sha">SHA-256</span>: <code id="apkSha">—</code></p>
     </div>
   </section>
 
@@ -506,13 +543,20 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=097"></script>
+<script src="assets/js/main.js?v=0911"></script>
 <script>
-/* Fills the size and checksum of the APK when a small info file sits next to it (downloads/info.json). */
-fetch("downloads/info.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
-  if (!j) return;
-  if (j.size) document.getElementById("apkSize").textContent = j.size;
-  if (j.sha256) document.getElementById("apkSha").textContent = j.sha256;
+/* Android: the newest release on GitHub gives the version, the size and the checksum, so the page never goes stale. */
+fetch("https://api.github.com/repos/abdallafouad96/barq/releases/latest").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  if (!j || !j.assets) return;
+  var v = String(j.tag_name || "").replace(/^v/i, "");
+  if (v) document.getElementById("apkVer").textContent = v;
+  j.assets.forEach(function (a) {
+    if (a.name === "Barq.apk") {
+      document.getElementById("apkBtn").href = a.browser_download_url;
+      document.getElementById("apkSize").textContent = Math.round(a.size / 1048576) + " MB";
+      if (a.digest) document.getElementById("apkSha").textContent = String(a.digest).replace(/^sha256:/, "");
+    } else if (/armeabi/i.test(a.name)) document.getElementById("apk32").href = a.browser_download_url;
+  });
 }).catch(function () {});
 /* Windows: the newest release on GitHub gives the direct links, the version and the size. */
 fetch("https://api.github.com/repos/abdallafouad96/barq-dm-windows-releases/releases/latest").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
