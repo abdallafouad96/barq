@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barq DM for Windows — Barq</title>
+<meta name="description" content="Barq is a download manager for Android and Windows: fast multi-connection downloads, video from any site in the quality you pick, a browser that finds files, an ad blocker and floating windows. English and Arabic.">
+<meta name="theme-color" content="#050a18">
+<meta property="og:title" content="Barq — Download anything at lightning speed">
+<meta property="og:description" content="A fast, beautiful download manager for Android and Windows. English and Arabic.">
+<meta property="og:image" content="assets/img/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=0912">
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-pip" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="12" y="12" width="7" height="5" rx="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9.5 9.5 0 0 1 12 0M9 16a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-torrent" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="5" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="19" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 7.5 10 10.5M17.5 7.5 14 10.5M12 15v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10.5 4.5v7H3zM12 4.3 21 3v8.5h-9zM3 12.5h7.5v7L3 18.5zM12 12.5h9V21l-9-1.3z" fill="currentColor"/></symbol>
+    <symbol id="i-update" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7M20 4v4.5h-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Barq"><img src="assets/img/logo.png" alt="" width="36" height="36"><span>Barq</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#why" data-i="nav.why">Why Barq</a>
+      <a href="index.html#showcase" data-i="nav.showcase">Android</a>
+      <a href="index.html#download" data-i="nav.download">Download</a>
+      <a href="windows.html" data-i="nav.windows">Windows</a>
+      <a href="index.html#faq" data-i="nav.faq">FAQ</a>
+    </nav>
+    <span class="spacer"></span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ar" aria-pressed="false">عربي</button>
+    </div>
+    <a class="btn btn-primary btn-sm" href="#windl" data-i="nav.download">Download</a>
+  </div>
+</header>
+
+<main id="top">
+  <section style="padding:28px 0 0"><div class="wrap"><a class="note" href="index.html" data-i="back.home">← Barq for Android</a></div></section>
+  <!-- windows -->
+  <section id="windows" class="dl">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="w.eyebrow">Barq for Windows</span>
+        <h2 data-i="w.h2">The same Barq on your PC</h2>
+        <p class="sub" data-i="w.sub">Barq DM brings the same look and the same speed to Windows, with a browser extension that takes your downloads.</p>
+      </div>
+      <!-- real screenshots of the Windows app -->
+      <div class="wshow rv">
+        <div class="wtabs" role="tablist">
+          <button class="wtab" role="tab" aria-selected="true"><em>1</em><span data-i="wt1.h">Everything at a glance</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>2</em><span data-i="wt2.h">Add a link</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>3</em><span data-i="wt3.h">Live progress</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>4</em><span data-i="wt4.h">Done in one click</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>5</em><span data-i="wt5.h">Light mode</span></button>
+          <button class="wtab" role="tab" aria-selected="false"><em>6</em><span data-i="wt6.h">In Arabic</span></button>
+        </div>
+        <div class="wstage">
+          <img class="wbg" src="assets/img/win-barq-dark-main.webp" alt="" aria-hidden="true" width="1366" height="793" loading="lazy">
+          <img class="full" src="assets/img/win-barq-dark-main.webp" alt="Barq DM main window: tiles, filters and the download list" width="1366" height="793" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-fileinfo.webp" alt="Barq DM Download File Info window" width="626" height="455" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-progress.webp" alt="Barq DM progress window with connections" width="646" height="590" loading="lazy">
+          <img class="dlg" src="assets/img/win-barq-dark-complete.webp" alt="Barq DM download complete window" width="546" height="389" loading="lazy">
+          <img class="full" src="assets/img/win-barq-light-main.webp" alt="Barq DM in light mode" width="1366" height="793" loading="lazy">
+          <img class="full" src="assets/img/win-barq-ar-main.webp" alt="Barq DM in Arabic" width="1366" height="793" loading="lazy">
+        </div>
+        <div class="wcaps">
+          <p data-i="wt1.p">Live speed and active downloads on top, coloured filters with counts, and a search box that also takes a link: paste it and the download starts.</p>
+          <p data-i="wt2.p">Paste a link (or let the browser extension send it): Barq DM shows the name, the size and the category, and puts the file in the right folder.</p>
+          <p data-i="wt3.p">Every file is split into up to 32 parts that download together. You see each connection, the speed and the time left, and you can pause and resume at any time.</p>
+          <p data-i="wt4.p">When a download finishes, a small window lets you open the file or its folder straight away, or copy the link.</p>
+          <p data-i="wt5.p">Light and dark follow Windows by default, and the accent colour can follow Windows too or be your own.</p>
+          <p data-i="wt6.p">The whole program is in English and Arabic, and the layout flips to right-to-left on its own.</p>
+        </div>
+      </div>
+
+      <!-- two looks -->
+      <div class="looks rv">
+        <div class="looks-text">
+          <span class="eyebrow" data-i="lk.eyebrow">Two looks, one program</span>
+          <h3 data-i="lk.h">Barq or Classic: you choose</h3>
+          <p data-i="lk.p">Barq DM has two faces. <b>Barq</b> looks like the Android app: tiles, filters and cards. <b>Classic</b> is the well-known table with menus, a toolbar and a category tree. Downloads, queues and settings are the same in both.</p>
+          <div class="look-sw" role="group" aria-label="Look">
+            <button type="button" class="lookbtn" data-look="win-barq-dark-main" aria-pressed="true" data-i="lk.b1">Barq · dark</button>
+            <button type="button" class="lookbtn" data-look="win-barq-light-main" aria-pressed="false" data-i="lk.b2">Barq · light</button>
+            <button type="button" class="lookbtn" data-look="win-classic-light-main" aria-pressed="false" data-i="lk.b3">Classic · light</button>
+            <button type="button" class="lookbtn" data-look="win-classic-dark-main" aria-pressed="false" data-i="lk.b4">Classic · dark</button>
+          </div>
+          <ol class="look-steps">
+            <li data-i="lk.s1">Open Options (the gear at the top, or Tasks &gt; Options).</li>
+            <li data-i="lk.s2">Go to the Themes tab.</li>
+            <li data-i="lk.s3">Pick Barq or Classic, then light, dark or same as Windows.</li>
+            <li data-i="lk.s4">Press OK: Barq DM restarts in the new look, and running downloads carry on.</li>
+          </ol>
+        </div>
+        <div class="looks-art">
+          <div class="lookstage"><img id="lookImg" src="assets/img/win-barq-dark-main.webp" alt="Barq DM look" width="1366" height="793" loading="lazy"></div>
+          <img class="themes-shot" src="assets/img/win-barq-dark-themes.webp" alt="Barq DM Options, Themes tab: Barq or Classic" width="546" height="713" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Barq Shield -->
+      <div class="shieldx rv" id="shield">
+        <div class="shx-text">
+          <span class="eyebrow" data-i="sx.eyebrow">Barq Shield</span>
+          <h3 data-i="sx.h">An ad blocker inside the extension</h3>
+          <p data-i="sx.p">The Barq DM extension for Chrome, Edge and Firefox comes with Barq Shield. It blocks ads, trackers and pop-ups on every site, and hides the empty boxes they leave behind.</p>
+          <ul class="shx-list">
+            <li data-i="sx.l1">9 well-known filter lists: EasyList, EasyList Arabic, uBlock filters, EasyPrivacy and more, about 18,000 rules.</li>
+            <li data-i="sx.l2">The lists update themselves once a day, and only the lists that changed are downloaded.</li>
+            <li data-i="sx.l3">Stops pop-up windows and invisible layers that open an ad wherever you click.</li>
+            <li data-i="sx.l4">"Block an element": click anything on a page to hide it, and it stays hidden.</li>
+            <li data-i="sx.l5">Pause it on one site, add your own filters, and skip YouTube ads (experimental).</li>
+          </ul>
+          <p class="shx-how" data-i="sx.how">To turn it on: click the Barq DM button in the browser toolbar, open the Shield tab and press the power button.</p>
+        </div>
+        <div class="shx-art">
+          <div class="ba" id="ba">
+            <img class="ba-after" src="assets/img/shield-after.webp" alt="The same page with Barq Shield on: no ads" width="1280" height="800" loading="lazy">
+            <div class="ba-before"><img src="assets/img/shield-before.webp" alt="A news page with ads, Barq Shield off" width="1280" height="800" loading="lazy"></div>
+            <span class="ba-tag t1" data-i="sx.off">Shield off</span><span class="ba-tag t2" data-i="sx.on">Shield on</span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare">
+            <i class="ba-line"></i>
+          </div>
+          <img class="shx-pop only-en" src="assets/img/shield-popup-en.webp" alt="Barq Shield in the extension popup: 10 blocked on this page" width="380" height="614" loading="lazy">
+          <img class="shx-pop only-ar" src="assets/img/shield-popup-ar.webp" alt="Barq Shield in the extension popup" width="380" height="633" loading="lazy">
+        </div>
+      </div>
+
+      <div class="wfeat rv">
+        <article class="card"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3 data-i="w1.h">Many connections</h3><p data-i="w1.p">Files are split into parts that download together and resume after a cut or a restart.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-globe"/></svg></div><h3 data-i="w2.h">Browser extension</h3><p data-i="w2.p">For Chrome, Edge and Firefox: Barq DM takes the downloads, the videos and the magnet links of the page.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3 data-i="w5.h">Barq Shield</h3><p data-i="w5.p">Ads, trackers and pop-ups blocked in the browser with 9 filter lists that update themselves.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-video"/></svg></div><h3 data-i="w3.h">Video and torrents</h3><p data-i="w3.p">Videos from popular sites in the quality you pick, magnet links and .torrent files.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="w6.h">Queues and scheduler</h3><p data-i="w6.p">Start downloads at night, limit the speed, and let Barq DM shut the PC down when it is done.</p></article>
+        <article class="card"><div class="ic"><svg><use href="#i-update"/></svg></div><h3 data-i="w4.h">Updates itself</h3><p data-i="w4.p">Barq DM checks for new versions once a day and installs them after you agree, checked with SHA-256.</p></article>
+      </div>
+      <div class="box rv" style="margin-top:26px">
+        <img class="logo" src="assets/img/logo.png" alt="Barq DM icon" width="108" height="108">
+        <div>
+          <span class="eyebrow" data-i="w.dl.eyebrow">Download for Windows</span>
+          <h2 id="windl" data-i="w.dl.h2">Get Barq DM</h2>
+          <p class="sub" style="margin:0" data-i="w.dl.sub">Installer or portable copy. Windows 10 and 11, 64-bit.</p>
+          <div class="meta"><span><span data-i="dl.ver">Version</span> <span id="winVer">1.10.0</span></span><span><span data-i="dl.size">Size</span> <span id="winSize" dir="ltr">101 MB</span></span><span data-i="w.req">Windows 10 / 11</span></div>
+        </div>
+        <div class="wbtns">
+          <a class="btn btn-primary" id="winBtn" href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases/latest"><svg><use href="#i-win"/></svg><span data-i="w.btn">Download for Windows</span></a>
+          <a class="btn btn-ghost" id="winZip" href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases/latest" data-i="w.zip">Portable (zip)</a>
+        </div>
+      </div>
+      <p class="note center rv" style="margin-top:18px"><a href="https://github.com/abdallafouad96/barq-dm-windows-releases/releases" data-i="w.all">All versions and SHA-256 checksums</a></p>
+    </div>
+  </section>
+
+  <!-- phone + PC -->
+  <section id="link" class="linksec">
+    <div class="wrap">
+      <div class="center rv">
+        <span class="eyebrow" data-i="lnk.eyebrow">Phone + PC</span>
+        <h2 data-i="lnk.h2">Your phone and your PC, working together</h2>
+        <p class="sub" data-i="lnk.sub">Pair Barq on Android with Barq DM on Windows once. On the same Wi-Fi, send links to the PC and bring finished files back to the phone.</p>
+      </div>
+      <div class="link-art rv">
+        <figure class="link-pc">
+          <img src="assets/img/win-phonelink.webp" alt="Barq DM, Tasks &gt; Connect a phone: the pairing QR code" width="586" height="491" loading="lazy">
+          <figcaption data-i="lnk.cap1">Barq DM: Tasks &gt; Connect a phone</figcaption>
+        </figure>
+        <div class="link-wire" aria-hidden="true"><i></i><i></i><i></i><span><svg><use href="#i-wifi"/></svg></span></div>
+        <figure class="link-phone">
+          <div class="phone"><div class="screen"><img class="only-en" src="assets/img/pclink-en.webp" alt="Barq, Settings &gt; PC link: the PC's downloads" width="540" height="1200" loading="lazy"><img class="only-ar" src="assets/img/pclink-ar.webp" alt="برق، الإعدادات ← ربط الكمبيوتر" width="540" height="1200" loading="lazy"></div></div>
+          <figcaption data-i="lnk.cap2">Barq: Settings &gt; PC link</figcaption>
+        </figure>
+      </div>
+      <div class="steps link-steps">
+        <div class="step rv"><h3 data-i="lnk.s1h">Pair with a QR code</h3><p data-i="lnk.s1p">On the PC open Tasks &gt; Connect a phone. On the phone open Settings &gt; PC link and scan the code. That is all, once.</p></div>
+        <div class="step rv"><h3 data-i="lnk.s2h">Send links to the PC</h3><p data-i="lnk.s2p">Found a big file on the phone? Tap "PC" in the share window or "Send to" in the + sheet, and Barq DM downloads it on the PC.</p></div>
+        <div class="step rv"><h3 data-i="lnk.s3h">Bring files to the phone</h3><p data-i="lnk.s3p">See the PC's downloads live, and tap "Get" on a finished file to copy it to the phone over Wi-Fi, with resume.</p></div>
+      </div>
+      <p class="note center rv" data-i="lnk.safe">Safe by design: only the phone that scanned the code can talk to Barq DM, every request is signed with its key, and nothing leaves your Wi-Fi.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/img/logo.png" alt="" width="32" height="32"><span>Barq</span></a>
+    <span data-i="ft.dev">Developed by Abdullah Fouad</span>
+    <span class="contacts">
+      <a href="https://www.facebook.com/Abdalla.MF2" rel="noopener">Facebook</a>
+      <a href="https://t.me/abdallafouad96" rel="noopener">Telegram</a>
+      <a href="mailto:abdalla.fouad@outlook.com">abdalla.fouad@outlook.com</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=0912"></script>
+<script>
+
+/* Windows: the newest release on GitHub gives the direct links, the version and the size. */
+fetch("https://api.github.com/repos/abdallafouad96/barq-dm-windows-releases/releases/latest").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  if (!j || !j.assets) return;
+  var v = String(j.tag_name || "").replace(/^v/i, "");
+  if (v) document.getElementById("winVer").textContent = v;
+  j.assets.forEach(function (a) {
+    if (/^BarqDM-Setup-.*\.exe$/i.test(a.name)) {
+      document.getElementById("winBtn").href = a.browser_download_url;
+      document.getElementById("winSize").textContent = Math.round(a.size / 1048576) + " MB";
+    } else if (/^BarqDM-Portable-.*\.zip$/i.test(a.name)) document.getElementById("winZip").href = a.browser_download_url;
+  });
+}).catch(function () {});
+</script>
+</body>
+</html>
+
+
