@@ -30,7 +30,7 @@
   <img src="assets/img/logo.png" alt="Barq" width="88" height="88">
   <h1 id="h">Connect Barq to your PC</h1>
   <div id="pc" class="pc" hidden></div>
-  <p id="p">Open this page on your Android phone, then tap the button. Barq connects to Barq DM on the PC.</p>
+  <p id="p">Open this page on your Android phone, then tap the button. Barq connects to Barq for Windows on the PC.</p>
   <a id="open" class="btn" href="#">Open in Barq</a>
   <a id="get" class="btn ghost" href="index.html#download">Get Barq for Android</a>
   <small id="s">The pairing code stays on your phone: it is after "#" in the address, so it is never sent to this website.</small>
@@ -40,13 +40,13 @@
   "use strict";
   var ar = /^ar\b/i.test(navigator.language || "");
   var T = ar ? {
-    h: "وصّل برق بالكمبيوتر", p: "افتح الصفحة دي على موبايلك الأندرويد ودوس الزرار. برق هيتوصل بـ Barq DM على الكمبيوتر.",
+    h: "وصّل برق بالكمبيوتر", p: "افتح الصفحة دي على موبايلك الأندرويد ودوس الزرار. برق هيتوصل بـ Barq for Windows على الكمبيوتر.",
     open: "افتح في برق", get: "حمّل برق للأندرويد", s: "كود الربط بيفضل على موبايلك: هو بعد علامة # في العنوان، فمش بيتبعت للموقع ده.",
-    bad: "الرابط ده ناقص. افتح Barq DM على الكمبيوتر ← المهام ← توصيل الموبايل، وامسح الكود تاني.", pc: "الكمبيوتر: "
+    bad: "الرابط ده ناقص. افتح Barq for Windows على الكمبيوتر ← المهام ← توصيل الموبايل، وامسح الكود تاني.", pc: "الكمبيوتر: "
   } : {
-    h: "Connect Barq to your PC", p: "Open this page on your Android phone, then tap the button. Barq connects to Barq DM on the PC.",
+    h: "Connect Barq to your PC", p: "Open this page on your Android phone, then tap the button. Barq connects to Barq for Windows on the PC.",
     open: "Open in Barq", get: "Get Barq for Android", s: "The pairing code stays on your phone: it is after \"#\" in the address, so it is never sent to this website.",
-    bad: "This link is not complete. On the PC open Barq DM > Tasks > Connect a phone and scan the code again.", pc: "PC: "
+    bad: "This link is not complete. On the PC open Barq for Windows > Tasks > Connect a phone and scan the code again.", pc: "PC: "
   };
   if (ar) { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
   var $ = function (id) { return document.getElementById(id); };
